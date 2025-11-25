@@ -4,10 +4,10 @@ import java.util.function.Consumer;
 
 public class ConsumerDemo {
     public static void main(String[] args) {
-        Consumer<String> consumer = s -> System.out.println(s);
+        Consumer<String> consumer = System.out::println;
         consumer.accept("aditya");
 
-        Consumer<List<Integer>> consumer1 = li ->{
+        Consumer<List<Integer>> consumer1 = li -> {
             for (int i : li){
                 System.out.println( i );
             }

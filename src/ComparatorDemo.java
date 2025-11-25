@@ -10,7 +10,7 @@ public class ComparatorDemo {
 
         System.out.println(li);
 //        Collections.sort(li,(a,b)-> b -a);
-        Collections.sort(li,new MyComparator());
+        li.sort(new MyComparator());
         System.out.println(li);
     }
 }
